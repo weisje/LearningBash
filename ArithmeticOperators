@@ -1,0 +1,50 @@
+#!/usr/bin/env bash
+
+#Global Variable Block(2022/03/18 -JW)
+
+#Reading data from the user (2022/03/18 -JW)
+#Test Data: a=9, b=6
+read -p 'Enter a : ' a
+read -p 'Enter b : ' b
+
+#Perform arithmic on provided a & b values (2022/03/18 -JW)
+#Addition Block
+#Test Data Result: 15
+add=$((a + b))
+echo "Addition of a($a) & b($b) are $add"
+
+#Subtraction Block (2022/03/18 -JW)
+#Test Data Result: 3
+sub=$((a - b))
+echo "Subtraction of a($a) & b($b) are $sub"
+
+#Multiplication Block (2022/03/18 -JW)
+#Test Data Result: 54
+mul=$((a * b))
+echo "Multiplication of a($a) & b($b) are $mul"
+
+#Division Block (2022/03/18 -JW)
+#Test Data Result: 1
+div=$((a / b))
+echo "Division of a($a) & b($b) are $div"
+
+#Modulus Block (2022/03/18 -JW)
+#Test Data Result: 3
+mod=$((a % b))
+echo "Modulus of a($a) & b($b) are $mod"
+
+#Increment of A Variable Block (2022/03/18 -JW)
+#Test Data Result: 10
+((++a))
+echo "Increment when applied on a results as a = $a"
+
+#Decrement of B Variable Block (2022/03/18 -JW)
+#Test Data Result: 5
+((--b))
+echo "Decrement when appled on b results as b = $b"
+
+#JOURNAL: (2022/03/18 -JW)
+#Citation(s):
+#Instruction taken from Geeks for Geeks web article "Basic Operators in Shell Scripting".  Code snippet as follow along for section "Arithmetic Operators"
+#Article Link: https://www.geeksforgeeks.org/basic-operators-in-shell-scripting/
+#Alt Article Link: https://web.archive.org/web/20211115234725/www.geeksforgeeks.org/basic-operators-in-shell-scripting/
